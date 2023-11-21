@@ -30,7 +30,7 @@ st.markdown(
     ### Thông tin liên hệ
     - Facebook: https://www.facebook.com/quangnghia559/ hoặc https://www.facebook.com/TTHieu29
     - Email: 21110559@student.hcmute.edu.vn hoặc 21110448@student.hcmute.edu.vn
-    - Lấy source code tại [đây](https://github.com/quangnghia1110/Xu_Ly_Anh_So.git)
+    - Lấy source code tại [đây](https://github.com/quangnghia1110/XuLyAnhSo.git)
     """
 )
 
