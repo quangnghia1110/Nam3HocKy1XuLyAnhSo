@@ -14,7 +14,7 @@ st.markdown(
     ### Website Xử Lý Ảnh Số
     - Thực hiện bởi: Ngô Quang Nghĩa và Trần Thanh Hiếu
     - Giảng viên hướng dẫn: ThS. Trần Tiến Đức
-    - Lớp Học máy nhóm 01: DIPR430685_23_1_01
+    - Lớp Xử Lý Ảnh Số nhóm 01: DIPR430685_23_1_01
     """
 )
 
