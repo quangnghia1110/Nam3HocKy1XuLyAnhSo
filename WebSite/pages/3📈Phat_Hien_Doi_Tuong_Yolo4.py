@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 st.title("Phát hiện đối tượng Yolo4")
 classes = None
-with open('object_detection_classes_yolov4.txt', 'rt') as f:
+with open('utility\RecognitionObjectYolo4\object_detection_classes_yolov4.txt', 'rt') as f:
     classes = f.read().rstrip('\n').split('\n')
 
 try:
@@ -13,7 +13,7 @@ try:
             pass
 except:
       st.session_state["LoadModel"] = True
-      st.session_state["Net"] = cv2.dnn.readNet('yolov4.weights', 'yolov4.cfg')
+      st.session_state["Net"] = cv2.dnn.readNet('utility\RecognitionObjectYolo4\yolov4.weights', 'utility\RecognitionObjectYolo4\yolov4.cfg')
       print('Load model lần đầu')
 st.session_state["Net"].setPreferableBackend(0)
 st.session_state["Net"].setPreferableTarget(0)

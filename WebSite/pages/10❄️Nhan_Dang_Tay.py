@@ -4,7 +4,7 @@ import os
 import utility.RecognitionFinger.hand as htm
 import streamlit as st
 
-st.sidebar.markdown("# Finger Recognition ❄️")
+st.sidebar.markdown("Nhận Dạng Tay")
 
 def get_fvalue(val):
     feature_dict = {"No": 1, "Yes": 2}
