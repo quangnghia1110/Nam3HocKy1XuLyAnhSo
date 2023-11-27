@@ -77,7 +77,7 @@ if __name__ == '__main__':
         if key == ord('s') or key == ord('S'):
             if faces[1] is not None:
                 face_align = recognizer.alignCrop(frame, faces[1][0])
-                file_name = '../image/BanNghia/BanNghia_%04d.bmp' % dem
+                file_name = '../image/NgoQuangNghia/NgoQuangNghia_%04d.bmp' % dem
                 cv.imwrite(file_name, face_align)
                 dem = dem + 1
         # Draw results on the input image

@@ -52,7 +52,7 @@ def visualize(input, faces, fps, thickness=2):
     cv.putText(input, 'FPS: {:.2f}'.format(fps), (1, 16), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
 detector = cv.FaceDetectorYN.create(
-    'utility\\7_DetectionFace\\face_detection_yunet_2023mar.onnx',
+    'utility\\B7_DetectionFace\\face_detection_yunet_2023mar.onnx',
     "",
     (320, 320),
     0.9,

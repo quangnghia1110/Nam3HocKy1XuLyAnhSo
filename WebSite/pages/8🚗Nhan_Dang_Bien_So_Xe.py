@@ -24,7 +24,7 @@ def tesseract_ocr(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Perform image preprocessing if needed
     # ...
-    pytesseract.pytesseract.tesseract_cmd = 'utility/8_RecognitionLicensePlates/Tesseract-OCR/tesseract.exe'
+    pytesseract.pytesseract.tesseract_cmd = 'utility/B8_RecognitionLicensePlates/Tesseract-OCR/tesseract.exe'
     # Apply OCR using Tesseract
     config = '--oem 3 --psm 6'  # Tesseract OCR configuration
     text = pytesseract.image_to_string(gray, config=config)
@@ -85,7 +85,7 @@ def video_draw_box(vid_path, model, frame_placeholder):
 def main():
     st.title("Nhận dạng biển số xe trực tiếp trên hình hoặc video")
     # Get weights and file path
-    pre_trained_model = "utility/8_RecognitionLicensePlates/best.pt"
+    pre_trained_model = "utility/B8_RecognitionLicensePlates/best.pt"
     media_type = st.radio("Loại file tải lên: ", ["Ảnh", "Video"])
     file_path = st.file_uploader("Tải ảnh hoặc video lên", type=["jpg", "jpeg", "png", "mp4"])
 

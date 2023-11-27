@@ -1,7 +1,7 @@
 import cv2
 import time
 import os
-import utility.RecognitionFinger.hand as htm
+import utility.B10_RecognitionFinger.hand as htm
 import streamlit as st
 
 st.sidebar.markdown("Nhận Dạng Tay")
@@ -27,7 +27,7 @@ if app_mode == 'Finger Recognition':
 
         FRAME_WINDOW = st.image([])
 
-        FolderPath = "utility/RecognitionFinger/Fingers"
+        FolderPath = "utility/B10_RecognitionFinger/Fingers"
         lst = os.listdir(FolderPath)
 
         lst_2 = []  # khai báo list chứa các mảng giá trị của các hình ảnh/

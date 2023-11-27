@@ -30,7 +30,7 @@ if st.session_state.stop == True:
     FRAME_WINDOW.image(st.session_state.frame_stop, channels='BGR')
 
 
-svc = joblib.load('utility\\2_RecognitionFace\\svc.pkl')
+svc = joblib.load('utility\\B2_RecognitionFace\\svc.pkl')
 mydict = ['BanNghia', 'BanThuan', 'BanThuong', 'BanToan']
 
 def visualize(input, faces, fps, thickness=2):
@@ -50,7 +50,7 @@ def visualize(input, faces, fps, thickness=2):
 
 if __name__ == '__main__':
     detector = cv.FaceDetectorYN.create(
-        'utility\\2_RecognitionFace\\face_detection_yunet_2023mar.onnx',
+        'utility\\B2_RecognitionFace\\face_detection_yunet_2023mar.onnx',
         "",
         (320, 320),
         0.9,
@@ -58,7 +58,7 @@ if __name__ == '__main__':
         5000)
     
     recognizer = cv.FaceRecognizerSF.create(
-    'utility\\2_RecognitionFace\\face_recognition_sface_2021dec.onnx',"")
+    'utility\\B2_RecognitionFace\\face_recognition_sface_2021dec.onnx',"")
 
     tm = cv.TickMeter()
 

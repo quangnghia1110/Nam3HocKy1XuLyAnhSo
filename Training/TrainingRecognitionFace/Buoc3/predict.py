@@ -26,7 +26,7 @@ parser.add_argument('--save', '-s', type=str2bool, default=False, help='Set true
 args = parser.parse_args()
 
 svc = joblib.load('../model/svc.pkl')
-mydict = ['BanNghia','BanThuan','BanThuong','BanToan']
+mydict = ['NgoQuangNghia','TranThanhHieu','BanThuong','BanToan']
 
 def visualize(input, faces, fps, thickness=2):
     if faces[1] is not None:
